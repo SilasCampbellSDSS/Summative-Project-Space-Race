@@ -13,10 +13,12 @@ namespace Summative_Project_Space_Race
 {
     public partial class SpaceRacer : Form
     {
+        //My record is fourteen points in one game
         //Gloabal variables
+
         //Player variables
-        Rectangle player1 = new Rectangle(163, 505, 20, 30);
-        Rectangle player2 = new Rectangle(487, 505, 20, 30);
+        Rectangle player1 = new Rectangle(163, 505, 15, 25);
+        Rectangle player2 = new Rectangle(487, 505, 15, 25);
 
         int playerSpeed = 10;
         int meteorSize = 0;
@@ -176,7 +178,7 @@ namespace Summative_Project_Space_Race
             //Removing meteor if it goes out of bounds
             for (int i = 0; i < meteorList.Count(); i++)
             {
-                if (meteorList[i].X > 650 || meteorList[i].Y > 505)
+                if (meteorList[i].X > 650 || meteorList[i].Y > 495)
                 {
                     meteorList.RemoveAt(i);
                     meteorSpeeds.RemoveAt(i);
@@ -214,6 +216,9 @@ namespace Summative_Project_Space_Race
             {
                 if (meteorList[i].IntersectsWith(player1))
                 {
+                    SoundPlayer collisionPlayer = new SoundPlayer(Properties.Resources.collision);
+                    collisionPlayer.Play();
+                    
                     player1.Y = 505;
                     meteorList.RemoveAt(i);
                     meteorSpeeds.RemoveAt(i);
@@ -222,6 +227,9 @@ namespace Summative_Project_Space_Race
 
                 if (meteorList[i].IntersectsWith(player2))
                 {
+                    SoundPlayer collisionPlayer = new SoundPlayer(Properties.Resources.collision);
+                    collisionPlayer.Play();
+
                     player2.Y = 505;
                     meteorList.RemoveAt(i);
                     meteorSpeeds.RemoveAt(i);

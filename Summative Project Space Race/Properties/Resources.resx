@@ -130,6 +130,9 @@
   <data name="ezgif-2-df57a1687b" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ezgif-2-df57a1687b.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="collision" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8-bit-game-2-186976.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="rocket" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ezgif-1-b703fc1e37.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

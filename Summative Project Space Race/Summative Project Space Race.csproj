@@ -95,5 +95,8 @@
   <ItemGroup>
     <None Include="Resources\ezgif-1-b703fc1e37.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-bit-game-2-186976.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
