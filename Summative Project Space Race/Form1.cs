@@ -14,7 +14,7 @@ namespace Summative_Project_Space_Race
     public partial class SpaceRacer : Form
     {
         //My record is fourteen points in one game
-        //Gloabal variables
+        //Global variables
 
         //Player variables
         Rectangle player1 = new Rectangle(163, 505, 15, 25);
