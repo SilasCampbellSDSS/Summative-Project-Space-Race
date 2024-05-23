@@ -20,7 +20,7 @@ namespace Summative_Project_Space_Race
         Rectangle player1 = new Rectangle(163, 505, 15, 25);
         Rectangle player2 = new Rectangle(487, 505, 15, 25);
 
-        int playerSpeed = 10;
+        int playerSpeed = 8;
         int meteorSize = 0;
 
         //Lists
@@ -49,6 +49,9 @@ namespace Summative_Project_Space_Race
         public SpaceRacer()
         {
             InitializeComponent();
+
+            SoundPlayer openingMusic = new SoundPlayer(Properties.Resources.opening);
+            openingMusic.Play();
         }
 
         private void SpaceRacer_KeyDown(object sender, KeyEventArgs e)
@@ -124,6 +127,9 @@ namespace Summative_Project_Space_Race
 
         public void InitializeGame()
         {
+            SoundPlayer openingMusic = new SoundPlayer(Properties.Resources.opening);
+            openingMusic.Stop();
+
             winLabel.Visible = false;
             titleLabel.Visible = false;
             p2ScoreLabel.Text = "0";
@@ -153,23 +159,23 @@ namespace Summative_Project_Space_Race
             randValue = randGen.Next(1, 100);
 
             //Making meteors and their sizes and speeds random
-            if (randValue <= 15)
+            if (randValue <= 20)
             {
                 randValue = randGen.Next(30, this.Height);
                 Rectangle meteor = new Rectangle(0, randValue, meteorSize, meteorSize);
                 meteorList.Add(meteor);
 
-                meteorSizes.Add(randSize.Next(3, 10));
+                meteorSizes.Add(randSize.Next(4, 10));
                 meteorSpeeds.Add(randomSpeeds.Next(4, 17));
             }
 
-            if (randValue > 15 && randValue <= 30)
+            if (randValue > 20 && randValue <= 40)
             {
                 randValue = randGen.Next(30, this.Height);
                 Rectangle meteor = new Rectangle(650, randValue, meteorSize, meteorSize);
                 meteorList.Add(meteor);
 
-                meteorSizes.Add(randSize.Next(3, 10));
+                meteorSizes.Add(randSize.Next(4, 10));
                 meteorSpeeds.Add(randomSpeeds.Next(-17, -4));
             }
         }

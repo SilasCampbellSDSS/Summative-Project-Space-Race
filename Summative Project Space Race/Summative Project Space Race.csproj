@@ -98,5 +98,11 @@
   <ItemGroup>
     <None Include="Resources\8-bit-game-2-186976.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2023-04-11_-_Contact_With_The_Unknown_-_www.FesliyanStudios.com.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digital-adrenaline-159491.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

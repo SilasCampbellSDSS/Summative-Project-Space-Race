@@ -136,4 +136,10 @@
   <data name="rocket" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ezgif-1-b703fc1e37.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="gameAction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\digital-adrenaline-159491.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="opening" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2023-04-11_-_Contact_With_The_Unknown_-_www.FesliyanStudios.com.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
